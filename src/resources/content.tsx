@@ -1,19 +1,19 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Jayme",
+  lastName: "Ramos",
+  name: "Jayme Ramos",
+  role: "Full Stack Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "jfrancisramos028@gmail.com",
+  location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Filipino"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -24,18 +24,18 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/JaymeFrancis",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/jayme-francis-ramos-1b1852287",
   },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  // },
   {
     name: "Email",
     icon: "email",
@@ -49,7 +49,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Transforming ideas into high-performing web experiences</>,
   featured: {
     display: true,
     title: (
@@ -63,18 +63,7 @@ const home: Home = {
     ),
     href: "/work/building-once-ui-a-customizable-design-system",
   },
-  subline: (
-    <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
-    </>
-  ),
+  subline: "I'm Jayme, a full stack developer passionate about clean design, efficient code, and bringing ideas to life through modern web technologies.",
 };
 
 const about: About = {
@@ -91,16 +80,19 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://wa.me/639173694774?text=Hi%20Jayme!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20development%20project%20with%20you.",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        A Philippines-based Full Stack Web Developer with over a year of experience
+        building scalable SaaS platforms using ReactJS, Next.js, and Laravel.
+        Specializes in creating responsive, high-performance web and mobile applications
+        and has hands-on experience with DevOps and Linux server deployments.
+        Passionate about clean code, modern development practices, and continuous learning,
+        leverages AI tools to streamline workflow and deliver efficient solutions.
       </>
     ),
   },
@@ -109,45 +101,40 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Debugged Solutions Sdn Bhd",
+        timeframe: "May 2024 - October 2025",
+        role: "Lead Frontend and Full Stack Developer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          "Led frontend development of multiple SaaS platforms using ReactJS, TypeScript, and TailwindCSS, ensuring clean architecture and responsive design.",
+          "Developed and integrated RESTful APIs with Laravel for scalable backend systems and optimized query performance with Redis caching.",
+          "Implemented various third-party API integrations including custom payment gateways, Google APIs, and social login systems (Google, Facebook, etc.).",
+          "Built and maintained a WebSocket proxy server to stream real-time cryptocurrency and stock data from the Polygon API, enhancing live analytics dashboards.",
+          "Created admin dashboards and CMS tools using Laravel Filament to simplify client-side content and data management.",
+          "Managed Ubuntu Linux server deployments, CI/CD pipelines, and system optimizations for improved scalability and uptime.",
+          "Collaborated with cross-functional teams in weekly sprints using Git branching workflows (feature → staging → main) and handled code reviews.",
+          "Utilized AI-assisted tools for code generation, debugging, and documentation to streamline workflow and accelerate development.",
+          "Contributed to mobile app prototypes using React Native (Expo), aligning features with existing web ecosystems.",
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      // {
+      //   company: "Creativ3",
+      //   timeframe: "2018 - 2022",
+      //   role: "Lead Designer",
+      //   achievements: [
+      //     "Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.",
+      //     "Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.",
+      //   ],
+      //   images: [],
+      // },
     ],
   },
   studies: {
@@ -155,77 +142,87 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+        name: "Saint Louis College of San Fernando La Union",
+        description: <>Bachelor of Science in Information Technology</>,
+      }
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "React & Next.js",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Building responsive and high-performance web applications using
+            ReactJS, TypeScript, and Next.js. Experienced in state management,
+            API integration, and optimizing UI rendering for scalable SaaS
+            solutions.
+          </>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "ReactJS", icon: "react" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "TypeScript", icon: "typescript" },
+          { name: "TailwindCSS", icon: "tailwind" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Laravel & API Development",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Skilled in developing robust backends with Laravel and Laravel API,
+            integrating third-party services such as custom payment gateways,
+            Google APIs, and social logins. Experienced in building CMS and admin
+            panels using Laravel Filament.
+          </>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "Laravel", icon: "laravel" },
+          { name: "PHP", icon: "php" },
+          { name: "MySQL", icon: "mysql" },
+          { name: "PostgreSQL", icon: "postgresql" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        title: "DevOps & Server Management",
+        description: (
+          <>
+            Managing CI/CD pipelines, Git-based workflows, and Ubuntu Linux server
+            deployments for production systems. Skilled in optimizing server
+            performance, Redis caching, and WebSocket proxy setup for real-time
+            data handling.
+          </>
+        ),
+        tags: [
+          { name: "Linux", icon: "linux" },
+          { name: "GitHub Actions", icon: "github" },
+          { name: "Redis", icon: "redis" }
         ],
-      },  
+        images: [],
+      },
+      {
+        title: "AI-Assisted & Modern Tooling",
+        description: (
+          <>
+            Leveraging AI tools to improve code generation, debugging, and
+            documentation. Experienced with Postman, VSCode, Cursor, Windsurf, and
+            Trello for an efficient, collaborative workflow.
+          </>
+        ),
+        tags: [
+          { name: "AI Tools", icon: "claude" },
+          { name: "VSCode", icon: "vscode" },
+          { name: "Postman", icon: "postman" },
+          { name: "Trello", icon: "trello" },
+        ],
+        images: [],
+      },
     ],
-  },
+  },  
 };
 
 const blog: Blog = {
