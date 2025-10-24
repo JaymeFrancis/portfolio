@@ -1,0 +1,106 @@
+---
+title: "Woofstash - Digital Asset & Collaboration Platform"
+publishedAt: "2024-08-09"
+summary: "Woofstash is a full-featured digital asset management and collaboration platform designed for marketing and creative teams, including a browser extension that lets users save ads directly from Meta and TikTok Ad Libraries."
+images:
+  - "/images/projects/woofstash/woofstash1.png"
+  - "/images/projects/woofstash/woofstash2.png"
+  - "/images/projects/woofstash/woofstash3.png"
+  - "/images/projects/woofstash/woofstash4.png"
+  - "/images/projects/woofstash/woofstash5.png"
+  - "/images/projects/woofstash/woofstash6.png"
+  - "/images/projects/woofstash/woofstash7.png"
+link: "https://woofstash.com/"
+---
+
+## Overview
+
+**Woofstash** is a comprehensive **digital asset management (DAM)** and **collaboration platform** built for marketing and creative teams.  
+It enables users to manage creative briefs, organize digital assets, collaborate in real-time, and even capture ads directly from **Meta** and **TikTok Ad Libraries** using its dedicated **browser extension**.
+
+## Key Features
+
+#### Creative Brief Management
+
+- Create, assign, and track creative briefs with progress and deadlines
+- Support for **content pillars**, **product focus areas**, and **reference links**
+- Commenting system for internal discussions and approvals
+- Real-time status tracking for transparent project flow
+
+#### Digital Asset Management
+
+- **Uppy.js**-powered drag-and-drop file upload system
+- Folder-based asset organization with tagging and categorization
+- Built-in **version control** for all media files
+- Secure file storage with fine-grained access permissions
+
+#### Team Collaboration
+
+- **Team-based workspaces** with role-based access
+- Activity logs and audit trails for accountability
+- **@mentions**, notifications, and in-app commenting for streamlined communication
+- Invitation-based member management system
+
+#### Content Planning
+
+- Organize by **content pillars** and **campaigns**
+- Track project timelines and statuses
+- Maintain a **media library** for reusing digital assets
+- Approval workflows for content submissions
+
+#### Browser Extension Integration
+
+- Official **Woofstash Browser Extension** for Chrome and Edge
+- Lets users **save and categorize ads directly** from **Meta Ad Library** and **TikTok Creative Center**
+- Automatically syncs collected ads to the user’s Woofstash workspace
+- Includes tagging, previewing, and note-taking for saved ads
+
+#### API & Integrations
+
+- RESTful **API** for system extensibility
+- **Webhook support** for automation and event-based actions
+- Ready for integration with marketing tools and analytics platforms
+
+## Technologies Used
+
+#### Backend
+
+- **Laravel (PHP)** for API and business logic
+- **MySQL** for structured data management
+- **Laravel Mix** for asset compilation
+
+#### Frontend
+
+- **JavaScript (ES6)** for dynamic interactions
+- **SASS** for modular and maintainable styling
+- **Uppy.js** for resilient file uploads
+- **Blade** for server-side templating
+
+## Challenges and Solutions
+
+#### File Management
+
+**Challenge:** Handling large uploads while maintaining stability.  
+**Solution:** Used **Uppy.js** with resumable uploads and pre-processing validation.
+
+#### Browser Extension Sync
+
+**Challenge:** Capturing and syncing ads from multiple external sources.  
+**Solution:** Built a **custom browser extension API layer** with rate-limiting and OAuth-secured sync endpoints.
+
+#### Collaboration and Permissions
+
+**Challenge:** Managing multiple teams and access levels.  
+**Solution:** Designed a **role-based permission system** with logging for all user actions.
+
+#### Workflow Automation
+
+**Challenge:** Keeping project status and notifications in sync across modules.  
+**Solution:** Implemented event-driven updates and **real-time notifications** with Laravel broadcasting.
+
+## Outcome
+
+- Delivered an **end-to-end creative asset management solution** with browser integration
+- Reduced creative briefing and asset retrieval times by **over 50%**
+- Enabled seamless **ad collection from Meta and TikTok**, boosting creative research workflows
+- Improved content collaboration and traceability across marketing teams

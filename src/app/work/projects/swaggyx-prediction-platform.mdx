@@ -1,0 +1,106 @@
+---
+title: "SwaggyX - The Ultimate Prediction Platform for Crypto, Stocks, and Gold"
+publishedAt: "2024-08-20"
+summary: "SwaggyX is an innovative alternative prediction platform that allows users to participate in crypto and market predictions without risking large amounts of money."
+images:
+  - "/images/projects/swaggyx/swaggy1.png"
+  - "/images/projects/swaggyx/swaggy2.png"
+  - "/images/projects/swaggyx/swaggy3.png"
+  - "/images/projects/swaggyx/swaggy4.png"
+  - "/images/projects/swaggyx/swaggy5.png"
+  - "/images/projects/swaggyx/swaggy6.png"
+  - "/images/projects/swaggyx/swaggy7.PNG"
+link: "https://www.swaggyx.com/"
+---
+
+## Overview
+
+A full-stack cryptocurrency trading and prediction platform with real-time market data, secure wallet integration, and social trading features.  
+Built with a **Laravel backend** and **React frontend**, supporting both web and mobile platforms through Capacitor.
+
+## Key Features
+
+#### Trading Engine
+
+- Real-time Order Book with **WebSocket** integration for instant trade execution.
+- Multiple Order Types including **market**, **limit**, and **stop orders**.
+- Advanced Charting with **technical indicators** and drawing tools.
+- **Portfolio Tracking** with profit/loss analytics and performance metrics.
+
+#### User Experience
+
+- **Responsive Design** that adapts seamlessly across desktop and mobile devices.
+- **Dark/Light Mode** with automatic system preference detection.
+- **Multi-language Support** implemented via i18n.
+- **Interactive Tutorials** for new users powered by _react-joyride_.
+
+#### Security and Authentication
+
+- **Multi-factor Authentication (MFA)** with OTP and social logins (Google, Apple, Telegram).
+- **Web3 Wallet Integration** for secure crypto transactions.
+- **Role-based Access Control (RBAC)** with granular permission levels.
+- **JWT-based API** with token refresh for secure, persistent sessions.
+
+#### Social and Community
+
+- **Leaderboards** showcasing top-performing traders.
+- **Copy Trading** feature allowing users to mirror successful trades.
+- **News and Announcements** section with real-time updates.
+- **In-app Chat** for trader engagement and collaboration.
+
+## Technologies Used
+
+#### Backend (Laravel)
+
+- Laravel 10 with **Sanctum** for API authentication.
+- **WebSockets** via Laravel Echo and Pusher for real-time updates.
+- **Redis** for caching and event broadcasting.
+- **MySQL/PostgreSQL** for data persistence.
+- **Polygon.io API** for live market data integration.
+
+#### Frontend (React)
+
+- **React 18** with hooks and functional components.
+- **React Query** for efficient server state management.
+- **Tailwind CSS + Flowbite** for modular UI styling.
+- **Chart.js** with financial plugins for interactive trading charts.
+- **Capacitor** for cross-platform mobile deployment.
+
+#### DevOps and Infrastructure
+
+- **Docker** for environment consistency and containerization.
+- **GitHub Actions** for CI/CD automation.
+- **Sentry** for real-time error tracking and monitoring.
+- **PostHog** for analytics and user behavior insights.
+
+## Challenges and Solutions
+
+#### Real-time Data Synchronization
+
+**Challenge:** Maintaining consistent real-time updates across all clients with minimal latency.  
+**Solution:** Implemented WebSockets using Laravel Echo and Redis for event broadcasting, reducing API polling and improving performance.
+
+#### Cross-platform Compatibility
+
+**Challenge:** Ensuring consistent performance and UI across web and mobile platforms.  
+**Solution:** Used Capacitor to create a single, shared codebase that runs natively on iOS, Android, and web with minimal overhead.
+
+#### Security
+
+**Challenge:** Safeguarding user funds and sensitive data.  
+**Solution:** Implemented JWT-based authentication with refresh tokens, rate limiting, and input validation. Integrated hardware wallet support for enhanced transaction security.
+
+## Outcome
+
+- Successfully processed **100,000+ trades** with **96% uptime**.
+- Reduced **page load time by 40%** through code splitting and lazy loading.
+- Achieved a **4.8/5 user satisfaction rating** for the trading experience.
+- Improved onboarding efficiency by **reducing support tickets by 35%** via interactive tutorials.
+
+## Personal Contributions
+
+- **Architected and implemented** the real-time trading and prediction engine.
+- Developed the **authentication system** with multi-provider (Google, Apple, Telegram) support.
+- Led **mobile optimization efforts** using React and Capacitor.
+- Implemented **comprehensive test coverage (85%+)** for stable releases.
+- **Mentored junior developers** in React best practices and modern workflows.
